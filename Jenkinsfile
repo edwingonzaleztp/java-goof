@@ -11,8 +11,8 @@ pipeline {
     stage('Test_Kiuwan') {
       steps {
         echo 'Testing Kiuwan...'
-	      kiuwan applicationName: 'PIPELINE_SEGURIDAD', connectionProfileUuid: '5PIH-WqhL', 
-		      failureThreshold: 98.0, label: '', sourcePath: '/', unstableThreshold: 99.0
+	      kiuwan applicationName: 'PIPELINE_KIUWAN', connectionProfileUuid: '5PIH-WqhL', failureThreshold: 97.0, label: '',
+		      measure: 'NONE', sourcePath: '/', unstableThreshold: 95.0
 	  }
     }
 	    
