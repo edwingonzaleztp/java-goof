@@ -39,8 +39,7 @@ pipeline {
     stage('Test_Kiuwan') {
       steps {
         echo 'Testing Kiuwan...'
-	      kiuwan applicationName: 'PIPELINE_KIUWAN', connectionProfileUuid: '5PIH-WqhL', failureThreshold: 97.0, label: '',
-		      measure: 'NONE', sourcePath: '/', unstableThreshold: 95.0
+	      kiuwan connectionProfileUuid: '9Fwr-0PNm', failureThreshold: 98.0, sourcePath: 'C:\\gitlab\\java-goof-main', unstableThreshold: 99.0
 	  }
     }
 	    
