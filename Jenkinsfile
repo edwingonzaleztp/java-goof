@@ -1,7 +1,12 @@
 pipeline {
   agent { label 'generic' }
 
-  stages {
+	stages {
+		stage('Git') {
+			steps {
+				git 'https://github.com/edwingonzaleztp/java-goof'
+			}
+		}
     //stage('Build') {
       //steps {
         //echo 'Building...'
@@ -39,7 +44,7 @@ pipeline {
     stage('Test_Kiuwan') {
       steps {
         echo 'Testing Kiuwan...'
-	      kiuwan connectionProfileUuid: '9Fwr-0PNm', failureThreshold: 98.0, sourcePath: 'C:\\gitlab\\java-goof-main', unstableThreshold: 99.0
+	      kiuwan connectionProfileUuid: '9Fwr-0PNm', failureThreshold: 98.0, sourcePath: '/', unstableThreshold: 99.0
 	  }
     }
 	    
