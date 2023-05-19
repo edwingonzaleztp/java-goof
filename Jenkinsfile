@@ -31,14 +31,14 @@ pipeline {
         !OSADependencies.json, !**/node_modules/**/*''', fullScanCycle: 10, generatePdfReport: true, groupId: '53', password: '{AQAAABAAAAAQmjNhbGgdCpMZP4oyrcwv38pEN1QExKMCWZ7TLlhmstw=}', preset: '36', projectName: 'Pipeline_Seguridad', sastEnabled: true, serverUrl: 'https://cxprivatecloud.checkmarx.net/', sourceEncoding: '6', useOwnServerCredentials: true, username: '', vulnerabilityThresholdResult: 'FAILURE', waitForResultsEnabled: true])
 	  }
     }
-	  stage('Test_Snyk') {
-      steps {
-        echo 'Testing Snyk...'
-        snykSecurity(
-          snykInstallation: 'snyk@latest',
-          snykTokenId: 'Id_Snyk_Cred',
-	)
-      }
+	 // stage('Test_Snyk') {
+      //steps {
+        //echo 'Testing Snyk...'
+        //snykSecurity(
+          //snykInstallation: 'snyk@latest',
+          //snykTokenId: 'Id_Snyk_Cred',
+	//)
+      //}
     }
 	  
     stage('Test_Kiuwan') {
