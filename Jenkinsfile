@@ -39,7 +39,7 @@ pipeline {
           //snykTokenId: 'Id_Snyk_Cred',
 	//)
       //}
-    }
+    //}
 	  
     stage('Test_Kiuwan') {
       steps {
