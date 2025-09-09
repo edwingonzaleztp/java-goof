@@ -1,6 +1,6 @@
 pipeline {
   agent { label 'generic' }
-
+// PRUEBA COMMIT
 	stages {
 		stage('Git') {
 			steps {
